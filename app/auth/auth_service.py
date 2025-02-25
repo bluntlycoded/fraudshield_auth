@@ -3,7 +3,7 @@ from firebase_admin import credentials, auth
 
 # Ensure Firebase is initialized only once
 if not firebase_admin._apps:
-    cred = credentials.Certificate("firebase_credentials.json")  # Ensure correct path
+    cred = credentials.Certificate("./firebase_credentials.json")  # Ensure correct path
     firebase_admin.initialize_app(cred)
 
 def create_user(email, password):
