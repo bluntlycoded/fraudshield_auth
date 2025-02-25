@@ -1,0 +1,9 @@
+Flask
+flask-socketio
+firebase-admin
+pyjwt
+pyotp
+qrcode[pil]
+cryptography
+requests
+pydantic
