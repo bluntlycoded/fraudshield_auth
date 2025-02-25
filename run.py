@@ -9,5 +9,6 @@ def index():
     return render_template("index.html")
 
 socketio = SocketIO(app)
+
 if __name__ == "__main__":
-    socketio.run(app,allow_unsafe_werkzeug=True,port=8000)
+    socketio.run(app, host="0.0.0.0", port=8000, debug=False)  # Change host to 0.0.0.0
